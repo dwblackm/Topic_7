@@ -12,7 +12,7 @@ GRASS GIS module clip will allow the user to overlay a polygon on one or more ta
 
 
 
-<img src="r_patch_smooth_overview.png" width=600 border=0><br>
+<img src="Areas_to_clip.png" width=600 border=0><br>
 Difference between fixed overlap width and spatially variable overlap.
 
 <p>
