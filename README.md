@@ -2,43 +2,38 @@
 Open Source
 For the mandatory part of the assignment I researched some open source tools in Google, which then took me to a GitHub repository.
 From there I found out as much information about the project to answer the assignment questions listed below. 
-## Note
+## Assignment Answers
 
+I chose to look up a project under google research called arxiv-latex-cleaner. The purpose of this tool is to clean LaTex code of a paper to submit into arXiv. It removes auxillary files and code comments.
 
-# clip
-GRASS GIS module clip will allow the user to overlay a polygon on one or more target features (layers) and extract from the target feature (or features) only the target feature data that lies within the area outlined by the clip polygon. 
+## Search on the Internet or in the installation of the software (GUI, CLI, documentation) for information related to use of the project, its community, and development.
 
-  
+The purpose of this tool is to clean LaTex code of a paper to submit into arXiv. It removes auxiliary files and code comments and places the document in a PDF. This tool assists in removing personally identifiable information from the comments in the LaTex scripting.
+## Find what is the project license, whether the license is approved by OSI or FSF.
+The license in Apache 2.0 which is a permissive free software license approved by both FSF and OSI.
 
+	
+## Which type of license it is (short, long, permissive, copyleft, ...)?
+This license is a permissive license.
+## How to report bugs and request new features in the project? 
+Go to this website https://github.com/google-research/arxiv-latex-cleaner/issues
+Create a new issue
+## How to ask questions about using the project?
+Use the contact GitHub to ask about projects hosted on their site
 
+## How to contact developers, who provides commercial support? 
+The person who seems to be doing the development is Jordi Pont-Tuset and his email is jponttuset@gmail.com
 
+## How to get latest source code?
+The creator of the tool is providing monthly contributions to the tool.
+where to view the code online, 
+https://github.com/google-research/arxiv-latex-cleaner/blob/master/arxiv_latex_cleaner.py
+## Where to get information about contributing to the project what would you have to do in order to contribute some of your work to the project or as a project extension?
+https://github.com/google-research/arxiv-latex-cleaner/blob/master/CONTRIBUTING.md
+## Is the project currently active? 
+The project is currently active.
 
-<img src="Areas_to_clip.png" width=600 border=0><br>
-Difference between fixed overlap width and spatially variable overlap.
+## Google Open Source Blog
+The site below demonstrates what the tool does and goes into more detail of the uses of the tool.
+https://opensource.googleblog.com/2019/02/arxiv-latex-cleaner.html 
 
-<p>
-For spatially variable overlap, options <b>parallel_smoothing</b>
-and <b>difference_reach</b> can be specified.
-Option <b>parallel_smoothing</b> smoothes the overlap zone in direction
-parallel to the edge.
-Option <b>difference_reach</b> enables to increase the sensitivity to higher
-differences on the edges by taking maximum difference values in the cells
-close to edges.
-
-<img src="r_patch_smooth_parallel_smoothing.png" border=0><br>
-Effect of <b>parallel_smoothing</b> option shown on overlap zone (created by specifying <b>overlap</b> option).
-Image A shows result with value 3 and B with value 9.
-
-
-Option <b>blend_mask</b> (experimental) can be used to specify which edges of
-the input_a DEM should be excluded from the blending. This is useful when
-DEMs A and B have identical edges (on the coast, for example) and we want
-to preserve only A (not blend it with B along the coast).
-The <b>blend_mask</b> raster can be created by digitizing area approximately around the excluded edges,
-so that the edge of DEM A is inside the areas and the rest are NULLs.
-This option requires more testing.
-
-## Installation
-Module r.patch.smooth must be run from GRASS GIS 7 environment. Within GRASS session, run in command line:
-
-    g.extension r.patch.smooth url=https://github.com/petrasovaa/r.patch.smooth
