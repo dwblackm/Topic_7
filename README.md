@@ -1,6 +1,7 @@
 # Topic_7
-Python Module
-This module will demonstrate how to use the clip tool to create a new shapefile which includes the area of interest for further commands to be executed later.
+Open Source
+For the mandatory part of the assignment I researched some open source tools in Google, which then took me to a GitHub repository.
+From there I found out as much information about the project to answer the assignment questions listed below. 
 ## Note
 
 
